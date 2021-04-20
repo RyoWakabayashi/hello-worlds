@@ -30,7 +30,7 @@ repos:
       - id: eslint
         additional_dependencies:
           - eslint@7.24.0
-        files: \.(ts)$
+        files: \.(js|ts)$
         types: [file]
   - repo: https://github.com/pre-commit/mirrors-pylint
     rev: v3.0.0a1
