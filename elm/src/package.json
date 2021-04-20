@@ -1,0 +1,26 @@
+{
+  "name": "hello-elm",
+  "version": "1.0.0",
+  "description": "Say hello to Elm",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack-cli serve --mode development"
+  },
+  "author": "RyoWakabayashi",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.4",
+    "elm-hot-webpack-loader": "^1.1.8",
+    "elm-webpack-loader": "^7.0.1",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.34.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
