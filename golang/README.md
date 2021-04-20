@@ -1,11 +1,11 @@
-# Swift
+# Go
 
 ## Set up
 
 ### asdf
 
 ```shell
-asdf plugin-add swift
+asdf plugin-add golang
 asdf install
 cd src
 ```
@@ -14,11 +14,11 @@ cd src
 
 ```shell
 docker-compose up -d
-docker exec -it swift /bin/bash
+docker exec -it golang /bin/bash
 ```
 
 ## Say hello
 
 ```shell
-swift Hwllo.swift
+go run hello.go
 ```
