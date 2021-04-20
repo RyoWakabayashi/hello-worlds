@@ -6,6 +6,7 @@
 
 ```shell
 asdf plugin-add elm
+asdf plugin-add node
 asdf install
 cd src
 ```
