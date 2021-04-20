@@ -1,0 +1,35 @@
+{
+  "name": "hello-worlds",
+  "version": "1.0.0",
+  "description": "Hello to multiple languages",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "fix": "eslint --fix ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyoWakabayashi/hello-worlds.git"
+  },
+  "author": "RyoWakabayashi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RyoWakabayashi/hello-worlds/issues"
+  },
+  "homepage": "https://github.com/RyoWakabayashi/hello-worlds#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "eslint": "^7.24.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "husky": "^6.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
