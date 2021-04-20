@@ -1,0 +1,8 @@
+version: "3"
+services:
+  elixir:
+    build: .
+    container_name: elixir
+    tty: true
+    volumes:
+      - "./src:/work"
