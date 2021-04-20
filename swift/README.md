@@ -1,11 +1,11 @@
-# Node.js
+# Python
 
 ## Set up
 
 ### asdf
 
 ```shell
-asdf plugin-add nodejs
+asdf plugin-add swift
 asdf install
 cd src
 ```
@@ -14,11 +14,11 @@ cd src
 
 ```shell
 docker-compose up -d
-docker exec -it python /bin/bash
+docker exec -it swift /bin/bash
 ```
 
 ## Say hello
 
 ```shell
-node hello.js
+swift Hwllo.swift
 ```
