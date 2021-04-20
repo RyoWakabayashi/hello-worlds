@@ -1,0 +1,10 @@
+version: "3"
+services:
+  elm:
+    build: .
+    container_name: elm
+    tty: true
+    volumes:
+      - "./src:/work"
+    ports:
+      - "3000:3000"

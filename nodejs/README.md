@@ -14,7 +14,7 @@ cd src
 
 ```shell
 docker-compose up -d
-docker exec -it python /bin/bash
+docker exec -it nodejs /bin/bash
 ```
 
 ## Say hello
