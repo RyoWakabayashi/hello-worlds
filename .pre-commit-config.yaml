@@ -24,6 +24,10 @@ repos:
         args: [--branch, main]
       - id: requirements-txt-fixer
       - id: trailing-whitespace
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.7.2.1
+    hooks:
+      - id: shellcheck
   - repo: https://github.com/pre-commit/mirrors-eslint
     rev: v7.24.0
     hooks:
