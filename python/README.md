@@ -14,7 +14,7 @@ cd src
 
 ```shell
 docker-compose up -d
-docker exec -id python /bin/bash
+docker exec -it python /bin/bash
 ```
 
 ## Say hello
