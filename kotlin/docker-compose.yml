@@ -1,0 +1,8 @@
+version: "3"
+services:
+  kotlin:
+    build: .
+    container_name: kotlin
+    tty: true
+    volumes:
+      - "./src:/work"
