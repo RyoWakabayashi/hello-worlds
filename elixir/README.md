@@ -2,6 +2,14 @@
 
 ## Set up
 
+### Install dependences
+
+#### Ubuntu
+
+```shell
+sudo apt-get install unzip
+```
+
 ### asdf
 
 ```shell
