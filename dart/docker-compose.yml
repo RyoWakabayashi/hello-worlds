@@ -1,0 +1,8 @@
+version: "3"
+services:
+  dart:
+    build: .
+    container_name: dart
+    tty: true
+    volumes:
+      - "./src:/work"
