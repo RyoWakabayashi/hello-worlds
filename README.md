@@ -14,7 +14,7 @@ Hello world on multiple languages
 #### Ubuntu
 
 ```shell
-sudo apt-get install \
+sudo apt-get install -y \
   unzip \
   git \
   cmake \
@@ -37,13 +37,18 @@ sudo apt-get install \
 ### asdf install
 
 ```shell
+asdf plugin-add dart
 asdf plugin-add elixir
 asdf plugin-add elm
 asdf plugin-add golang
 asdf plugin-add java
+asdf plugin-add kotlin
 asdf plugin-add nodejs
 asdf plugin-add python
+asdf plugin-add R
 asdf plugin-add ruby
+asdf plugin-add rust
+asdf plugin-add scala
 asdf plugin-add swift
 asdf install
 ```
