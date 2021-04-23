@@ -41,6 +41,35 @@ delete followings from `~/.asdf/plugins/php/bin/install`.
 - `--with-gd`
 - `install_composer $ASDF_INSTALL_PATH`
 
+### asdf on Ubuntu
+
+```shell
+sudo apt -y install -y \
+  bison \
+  build-essential \
+  libgd-dev \
+  libonig-dev \
+  libpq-dev \
+  libzip-dev \
+  libxml2-dev \
+  libssl-dev \
+  libbz2-dev \
+  libcurl4-openssl-dev \
+  libjpeg-dev \
+  libpng-dev \
+  libmcrypt-dev \
+  libreadline-dev \
+  libtidy-dev \
+  libxslt-dev \
+  re2c \
+  autoconf
+```
+
+After run `asdf plugin-add php`,
+delete followings from `~/.asdf/plugins/php/bin/install`.
+
+- `install_composer $ASDF_INSTALL_PATH`
+
 ### asdf
 
 ```shell
