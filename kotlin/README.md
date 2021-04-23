@@ -21,6 +21,6 @@ docker exec -it kotlin /bin/bash
 ## Say hello
 
 ```shell
-kotlinc hello.kt -include-runtime -d hello.jar
-java -jar hello.jar
+kotlinc hello.kt
+kotlin HelloKt
 ```
