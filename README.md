@@ -44,6 +44,7 @@ asdf plugin-add golang
 asdf plugin-add java
 asdf plugin-add kotlin
 asdf plugin-add nodejs
+asdf plugin-add php
 asdf plugin-add python
 asdf plugin-add R
 asdf plugin-add ruby
