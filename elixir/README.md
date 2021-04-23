@@ -7,7 +7,7 @@
 #### Ubuntu
 
 ```shell
-sudo apt-get install unzip
+sudo apt-get install -y unzip
 ```
 
 ### asdf

@@ -1,0 +1,8 @@
+version: "3"
+services:
+  rust:
+    build: .
+    container_name: rust
+    tty: true
+    volumes:
+      - "./src:/work"
