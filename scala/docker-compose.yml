@@ -1,0 +1,8 @@
+version: "3"
+services:
+  scala:
+    build: .
+    container_name: scala
+    tty: true
+    volumes:
+      - "./src:/work"
