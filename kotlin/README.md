@@ -5,6 +5,7 @@
 ### asdf
 
 ```shell
+asdf plugin-add java
 asdf plugin-add kotlin
 asdf install
 cd src
