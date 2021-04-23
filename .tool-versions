@@ -5,6 +5,7 @@ golang 1.16.3
 java openjdk-16
 kotlin 1.4.20
 nodejs 15.14.0
+php 8.0.3
 python 3.9.4
 R 4.0.5
 ruby 3.0.1
