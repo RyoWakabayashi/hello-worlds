@@ -79,10 +79,11 @@ toTimeSlot "Hello, world!"
 ```elm
 worldList = ["a", "b", "c"]
 
+whatIsWorld name = \
+  "world is " ++ name ++ "!"
+
 worldList \
-|> List.map( \world -> \
-  "world is " ++ world ++ "!" \
-)
+|> List.map whatIsWorld
 ```
 
 ```elm
