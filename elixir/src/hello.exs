@@ -1,1 +1,1 @@
-IO.puts "Hello, world!"
+_ = IO.puts("Hello, world!")
