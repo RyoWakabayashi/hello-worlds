@@ -26,7 +26,7 @@ npm install
 
 If you are in a container, it will take longer.
 
-## Say hello
+## Say hello in browser
 
 ```shell
 npm run dev
@@ -35,3 +35,71 @@ npm run dev
 If you are using asdf, your browser will open automatically.
 
 If you are in a container, open <http://0.0.0.0:3000/> in your browser.
+
+### Say hello in repl
+
+```shell
+elm-repl
+```
+
+#### Static
+
+```elm
+"Hello, world!"
+```
+
+#### Brach
+
+```elm
+"Hello, world!" \
+|> \input -> \
+    if input == "Good morning" then \
+      "morning" \
+    else if String.contains "Hello" input then \
+      "noon" \
+    else \
+      "night"
+```
+
+```elm
+toTimeSlot greeting = \
+  case greeting of \
+    "Hello, world!" -> \
+      "noon" \
+    "Good morning, world!" -> \
+      "morning" \
+    _ -> \
+      "night"
+
+toTimeSlot "Hello, world!"
+```
+
+#### Loop
+
+```elm
+worldList = ["a", "b", "c"]
+
+worldList \
+|> List.map( \world -> \
+  "world is " ++ world ++ "!" \
+)
+```
+
+```elm
+import Dict exposing (Dict)
+
+worldDict = \
+  Dict.fromList \
+    [ ("a", "aaa") \
+    , ("b", "bbb") \
+    , ("c", "ccc") \
+    ]
+
+whatIsIt key value = \
+  "world " ++ key ++ " is " ++ value ++ "!"
+
+worldDict \
+|> Dict.map whatIsIt \
+|> Dict.toList \
+|> List.map Tuple.second
+```
