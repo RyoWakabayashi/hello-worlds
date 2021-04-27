@@ -17,13 +17,13 @@ public final class HelloLoop {
     * @param args Dummy
     */
   public static void main(final String[] args) {
-    ArrayList<String> worldList = new ArrayList<String>();
-    worldList.add("a");
-    worldList.add("b");
-    worldList.add("c");
+    ArrayList<String> worldArray = new ArrayList<String>();
+    worldArray.add("a");
+    worldArray.add("b");
+    worldArray.add("c");
 
     String format = "world is {0}!";
-    for (String world: worldList) {
+    for (String world: worldArray) {
       System.out.println(MessageFormat.format(format, world));
     }
 
