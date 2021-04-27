@@ -55,4 +55,18 @@ docker exec -it r-base /bin/bash
 Rscript hello.r
 ```
 
+## install R6
+
+To run hello_modules.r, You need install R6.
+
+```shell
+Rscript install_r6
+```
+
+## Run in terminal
+
+```shell
+R
+```
+
 [xquartz]: https://www.xquartz.org/

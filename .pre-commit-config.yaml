@@ -36,12 +36,20 @@ repos:
           - eslint@7.24.0
         files: \.(js|ts)$
         types: [file]
-  - repo: https://github.com/pre-commit/mirrors-pylint
-    rev: v3.0.0a1
+  - repo: local
     hooks:
       - id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [python]
   - repo: https://github.com/ambv/black
     rev: 20.8b1
     hooks:
       - id: black
         language_version: python3
+  - repo: https://github.com/doublify/pre-commit-rust
+    rev: v1.0
+    hooks:
+      - id: fmt
+      - id: cargo-check
