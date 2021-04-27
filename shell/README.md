@@ -1,3 +1,10 @@
 # shell
 
-You don't have to do anything.
+## macOS
+
+Upgrade bash
+
+```shell
+brew install bash
+sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
+```
