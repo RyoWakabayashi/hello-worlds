@@ -10,7 +10,7 @@ if (helloWorld === 'Good morning') {
 
 switch (helloWorld) {
   case 'Hello, world!':
-    console.log('nonn')
+    console.log('noon')
     break
   case 'Good morning, world!':
     console.log('morning')
