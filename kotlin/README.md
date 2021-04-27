@@ -21,6 +21,6 @@ docker exec -it kotlin /bin/bash
 ## Say hello
 
 ```shell
-kotlinc hello.kt
+kotlinc Hello.kt
 kotlin HelloKt
 ```
