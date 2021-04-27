@@ -1,0 +1,10 @@
+[package]
+name = "hello_world"
+version = "1.0.0"
+authors = ["gfdmkm573@gmail.com"]
+
+[[bin]]
+name = "hello"
+path = "rust/src/hello.rs"
+
+[dependencies]
