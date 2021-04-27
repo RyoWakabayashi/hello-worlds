@@ -1,18 +1,18 @@
 use std::collections::HashMap;
 
 fn main() {
-  let worldList = ["a", "b", "c"];
+  let world_list = ["a", "b", "c"];
 
-  for world in worldList.iter() {
+  for world in world_list.iter() {
     println!("world is {}!", world);
   }
 
-  let mut worldMap = HashMap::new();
-  worldMap.insert("a", "aaa");
-  worldMap.insert("b", "bbb");
-  worldMap.insert("c", "ccc");
+  let mut world_map = HashMap::new();
+  world_map.insert("a", "aaa");
+  world_map.insert("b", "bbb");
+  world_map.insert("c", "ccc");
 
-  for (const [key, value] of Object.entries(worldObject)) {
-    console.log(`world ${key} is ${value}!`)
+  for (key, value) in world_map.into_iter() {
+    println!("world {} is {}!", key, value)
   }
 }
