@@ -6,3 +6,6 @@ elm-stuff
 
 # Rust
 target
+
+# Python
+.ipynb_checkpoints
