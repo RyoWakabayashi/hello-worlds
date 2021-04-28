@@ -1,3 +1,19 @@
+<html><head>
+<title>Hello</title></head>
+<body>
+<button type="button" onclick="say_hello()">Hello</button>
+<input type="text" name="hello" onchange="set_label()"/>
+<p id="hello-label" name="helloLabel"></p>
 <script type="text/vbscript">
-    MsgBox("Hello, world!")
+Sub say_hello()
+    MsgBox "Hello, world!"
+End Sub
+Sub set_label()
+    Dim hello
+    hello=document.getElementsByName("hello")(0).Value
+    Set labelTag=document.getElementById("hello-label")
+    labelTag.innerText=hello
+End Sub
 </script>
+</body>
+</html>
