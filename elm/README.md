@@ -39,7 +39,7 @@ If you are in a container, open <http://0.0.0.0:3000/> in your browser.
 ### Say hello in repl
 
 ```shell
-elm-repl
+elm repl
 ```
 
 #### Static
@@ -103,4 +103,44 @@ worldDict \
 |> Dict.map whatIsIt \
 |> Dict.toList \
 |> List.map Tuple.second
+```
+
+### Get value from list of map
+
+```elm
+import Dict exposing (Dict)
+
+productions = \
+  [ \
+    Dict.fromList \
+      [ ("name", "mono-doco") \
+      , ("developer", "oec") \
+      , ("price", "1000") \
+      ] \
+    , Dict.fromList \
+      [ ("name", "aki-doco") \
+      , ("developer", "oec") \
+      , ("price", "2000") \
+      ] \
+    , Dict.fromList \
+      [ ("name", "xxx") \
+      , ("developer", "yyy") \
+      , ("price", "500") \
+      ] \
+  ]
+
+developedBy developer dict = \
+  dict \
+    |> Dict.get "developer" \
+    |> Maybe.withDefault "" \
+    |> (==) developer
+
+getPrice dict = \
+  dict \
+    |> Dict.get "price" \
+    |> Maybe.withDefault "0"
+
+productions \
+|> List.filter (developedBy "oec") \
+|> List.map getPrice
 ```
