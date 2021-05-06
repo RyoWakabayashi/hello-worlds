@@ -51,8 +51,7 @@ elm repl
 #### Brach
 
 ```elm
-"Hello, world!" \
-|> \input -> \
+"Hello, world!" |> \input -> \
     if input == "Good morning" then \
       "morning" \
     else if String.contains "Hello" input then \
