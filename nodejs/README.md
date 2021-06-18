@@ -2,19 +2,30 @@
 
 ## Set up
 
-### asdf
-
-```shell
-asdf plugin-add nodejs
-asdf install
-cd src
-```
-
 ### docker
 
 ```shell
 docker-compose up -d
 docker exec -it nodejs /bin/bash
+```
+
+### asdf
+
+#### Ubuntu dependencies
+
+```shell
+apt install -y \
+  dirmngr \
+  gawk \
+  gpg
+```
+
+#### asdf install
+
+```shell
+asdf plugin add nodejs
+asdf install
+cd scripts
 ```
 
 ## Say hello

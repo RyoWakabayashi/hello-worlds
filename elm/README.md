@@ -2,20 +2,31 @@
 
 ## Set up elm environment
 
-### asdf
-
-```shell
-asdf plugin-add elm
-asdf plugin-add node
-asdf install
-cd src
-```
-
 ### docker
 
 ```shell
 docker-compose up -d
 docker exec -it elm /bin/bash
+```
+
+### asdf
+
+#### Ubuntu dependencies
+
+```shell
+apt install -y \
+  dirmngr \
+  gawk \
+  gpg
+```
+
+#### asdf install
+
+```shell
+asdf plugin add elm
+asdf plugin add node
+asdf install
+cd project
 ```
 
 ## Set up elm project

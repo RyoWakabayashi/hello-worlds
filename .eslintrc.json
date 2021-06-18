@@ -1,4 +1,4 @@
 {
     "extends": "standard",
-    "ignorePatterns": ["elm/src/main.js"]
+    "ignorePatterns": ["elm/scripts/main.js"]
 }

@@ -1,8 +1,9 @@
 version: "3"
+
 services:
   r-base:
     build: .
     container_name: r-base
     tty: true
     volumes:
-      - "./src:/work"
+      - "./scripts:/work"
