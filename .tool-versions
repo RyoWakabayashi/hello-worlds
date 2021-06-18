@@ -12,3 +12,4 @@ ruby 3.0.1
 rust 1.51.0
 scala 2.13.5
 swift 4.1
+hadolint v2.5.0

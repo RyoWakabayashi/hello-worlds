@@ -41,6 +41,7 @@ asdf plugin-add dart
 asdf plugin-add elixir
 asdf plugin-add elm
 asdf plugin-add golang
+asdf plugin-add hadolint
 asdf plugin-add java
 asdf plugin-add kotlin
 asdf plugin-add nodejs
