@@ -6,7 +6,7 @@ module.exports = (env, argv) => {
     plugins: [
       new webpack.HotModuleReplacementPlugin()
     ],
-    entry: './src/index.js',
+    entry: './scripts/index.js',
     output: {
       filename: 'main.js',
       path: path.resolve(__dirname)

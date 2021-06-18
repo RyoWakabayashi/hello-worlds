@@ -2,7 +2,16 @@
 
 ## Set up
 
-### asdf on macOS
+### docker
+
+```shell
+docker-compose up -d
+docker exec -it php /bin/bash
+```
+
+### asdf
+
+#### macOS dependencies
 
 Not recommended.
 
@@ -34,17 +43,18 @@ export PKG_CONFIG_PATH="\
 :/usr/local/opt/libzip/lib/pkgconfig"
 ```
 
-After run `asdf plugin-add php`,
+After run `asdf plugin add php`,
 delete followings from `~/.asdf/plugins/php/bin/install`.
 
 - `--with-curl`
 - `--with-gd`
 - `install_composer $ASDF_INSTALL_PATH`
 
-### asdf on Ubuntu
+#### Ubuntu dependencies
 
 ```shell
-sudo apt -y install -y \
+apt install -y \
+  autoconf \
   bison \
   build-essential \
   libgd-dev \
@@ -59,30 +69,19 @@ sudo apt -y install -y \
   libpng-dev \
   libmcrypt-dev \
   libreadline-dev \
+  libsqlite3-dev \
   libtidy-dev \
   libxslt-dev \
   re2c \
-  autoconf
+  sqlite3
 ```
 
-After run `asdf plugin-add php`,
-delete followings from `~/.asdf/plugins/php/bin/install`.
-
-- `install_composer $ASDF_INSTALL_PATH`
-
-### asdf
+#### asdf install
 
 ```shell
-asdf plugin-add php
+asdf plugin add php
 asdf install
-cd src
-```
-
-### docker
-
-```shell
-docker-compose up -d
-docker exec -it php /bin/bash
+cd scripts
 ```
 
 ## Say hello

@@ -4,41 +4,42 @@
 
 ### Install dependences
 
-#### Ubuntu
-
-```shell
-sudo apt-get install \
-  git \
-  cmake \
-  ninja-build \
-  clang \
-  python \
-  uuid-dev \
-  libicu-dev \
-  icu-devtools \
-  libbsd-dev \
-  libedit-dev \
-  libxml2-dev \
-  libsqlite3-dev \
-  swig \
-  libpython2-dev \
-  libncurses5-dev \
-  pkg-config
-```
-
-### asdf
-
-```shell
-asdf plugin-add swift
-asdf install
-cd src
-```
-
 ### docker
 
 ```shell
 docker-compose up -d
 docker exec -it swift /bin/bash
+```
+
+### asdf
+
+#### Ubuntu dependencies
+
+```shell
+apt install -y \
+  binutils \
+  git \
+  gnupg2 \
+  libc6-dev \
+  libcurl4 \
+  libedit2 \
+  libgcc-9-dev \
+  libpython2.7 \
+  libsqlite3-0 \
+  libstdc++-9-dev \
+  libxml2 \
+  libz3-dev \
+  pkg-config \
+  tzdata \
+  zlib1g-dev
+```
+
+#### asdf install
+
+```shell
+asdf plugin add swift
+asdf install
+cd scripts
 ```
 
 ## Say hello

@@ -2,7 +2,16 @@
 
 ## Set up
 
-### asdf on macOS
+### docker
+
+```shell
+docker-compose up -d
+docker exec -it r-base /bin/bash
+```
+
+### asdf
+
+#### macOS dependencies
 
 Install [XQuartz].
 
@@ -10,10 +19,10 @@ Install [XQuartz].
 sudo ln -s /opt/X11/include/X11 /usr/local/include/X11
 ```
 
-### asdf on Ubuntu
+#### Ubuntu dependencies
 
 ```shell
-sudo apt install -y \
+apt install -y \
   build-essential \
   fort77 \
   xorg-dev \
@@ -34,19 +43,12 @@ sudo apt install -y \
   openjdk-8-jre
 ```
 
-### asdf
+#### asdf install
 
 ```shell
-asdf plugin-add R
+asdf plugin add R
 asdf install
-cd src
-```
-
-### docker
-
-```shell
-docker-compose up -d
-docker exec -it r-base /bin/bash
+cd scripts
 ```
 
 ## Say hello

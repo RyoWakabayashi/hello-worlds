@@ -53,7 +53,11 @@ repos:
     hooks:
       - id: fmt
       - id: cargo-check
+  - repo: https://github.com/Lucas-C/pre-commit-hooks-nodejs
+    rev: v1.1.1
+    hooks:
+      - id: htmlhint
   - repo: https://github.com/petalmd/dockerfile-pre-commit
-    rev: 'v1.0'
+    rev: "v1.0"
     hooks:
       - id: dockerlint

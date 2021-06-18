@@ -1,8 +1,9 @@
 version: "3"
+
 services:
   ruby:
     build: .
     container_name: ruby
     tty: true
     volumes:
-      - "./src:/work"
+      - "./scripts:/work"
