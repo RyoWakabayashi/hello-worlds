@@ -53,3 +53,7 @@ repos:
     hooks:
       - id: fmt
       - id: cargo-check
+  - repo: https://github.com/petalmd/dockerfile-pre-commit
+    rev: 'v1.0'
+    hooks:
+      - id: dockerlint
