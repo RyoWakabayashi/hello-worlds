@@ -1,3 +1,3 @@
-FROM r-base:4.0.5
+FROM r-base:4.1.0
 
 WORKDIR /work

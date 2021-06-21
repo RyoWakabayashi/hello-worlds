@@ -1,3 +1,3 @@
-FROM elixir:1.11.4
+FROM elixir:1.12.1
 
 WORKDIR /work

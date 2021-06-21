@@ -59,7 +59,7 @@ elm repl
 "Hello, world!"
 ```
 
-#### Brach
+#### Branch
 
 ```elm
 "Hello, world!" |> \input -> \

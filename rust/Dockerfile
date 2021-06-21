@@ -1,3 +1,3 @@
-FROM rust:1.51.0
+FROM rust:1.53.0
 
 WORKDIR /work

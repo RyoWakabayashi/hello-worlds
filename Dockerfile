@@ -25,6 +25,7 @@ RUN apt install -y \
     bison \
     binutils \
     build-essential \
+    clang \
     cmake \
     default-jre \
     default-jdk \
@@ -38,6 +39,8 @@ RUN apt install -y \
     gnupg2 \
     gobjc++ \
     gpg \
+    icu-devtools \
+    libbsd-dev \
     libc6-dev \
     libblas-dev \
     libbz2-dev \
@@ -45,12 +48,14 @@ RUN apt install -y \
     libcurl4 \
     libcurl4-openssl-dev \
     libdb-dev \
+    libedit-dev \
     libedit2 \
     libffi-dev \
     libgcc-9-dev \
     libgdbm-dev \
     libgd-dev \
     libgl1-mesa-dev \
+    libicu-dev \
     libjpeg-dev \
     liblzma-dev \
     libmcrypt-dev \
@@ -59,6 +64,7 @@ RUN apt install -y \
     libpcre2-dev \
     libpng-dev \
     libpq-dev \
+    libpython2-dev \
     libpython2.7 \
     libreadline-dev \
     libsdl2-2.0-0 \
@@ -73,37 +79,24 @@ RUN apt install -y \
     libxml2-utils \
     libxslt-dev \
     libzip-dev \
+    lsb-release \
+    ninja-build \
     openjdk-8-jdk \
     openjdk-8-jre \
     pkg-config \
+    python \
     re2c \
     sqlite3 \
+    swig \
     tk-dev \
     tzdata \
     unzip \
     uuid-dev \
     xorg-dev \
     xsltproc \
-    zlib1g-dev && \
+    zlib1g-dev \
+    uuid-dev && \
     apt clean && \
     rm -rf /var/lib/apt/lists/*
-
-RUN PATH="$HOME/.asdf/bin:$PATH" && \
-    asdf plugin add dart && \
-    asdf plugin add elixir && \
-    asdf plugin add elm && \
-    asdf plugin add erlang && \
-    asdf plugin add golang && \
-    asdf plugin add hadolint && \
-    asdf plugin add java && \
-    asdf plugin add kotlin && \
-    asdf plugin add nodejs && \
-    asdf plugin add php && \
-    asdf plugin add python && \
-    asdf plugin add R && \
-    asdf plugin add ruby && \
-    asdf plugin add rust && \
-    asdf plugin add scala && \
-    asdf plugin add swift
 
 WORKDIR /work

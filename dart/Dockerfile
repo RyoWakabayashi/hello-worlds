@@ -1,3 +1,3 @@
-FROM google/dart:2.12.4
+FROM google/dart:2.13.3
 
 WORKDIR /work
